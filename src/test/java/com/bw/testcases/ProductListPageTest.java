@@ -9,6 +9,7 @@ import org.testng.annotations.Test;
 import com.bw.base.TestBase;
 import com.bw.pages.HomePage;
 import com.bw.pages.ProductListPage;
+import com.bw.util.DataSupplier;
 import com.bw.util.TestUtil;
 
 public class ProductListPageTest extends TestBase {
@@ -29,7 +30,7 @@ public class ProductListPageTest extends TestBase {
 
 	@DataProvider
 	public Object[][] getTestData() {
-		Object data[][] = TestUtil.getData("Filters");
+		Object data[][] = DataSupplier.getData("Filters");
 		return data;
 	}
 
